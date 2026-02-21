@@ -1,0 +1,83 @@
+:root {
+  --color-primary-500: #0F766E;
+  --color-primary-400: #14B8A6;
+  --color-bg: #F4F7FA;
+  --color-text: #0F172A;
+  --color-muted: #64748B;
+
+  --glass-bg: rgba(255,255,255,0.2);
+  --glass-border: rgba(255,255,255,0.3);
+
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+section {
+  padding: var(--space-xl) 8%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: var(--space-xl) 8%;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: var(--space-md);
+}
+
+.btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg,#0F766E,#14B8A6);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.glass-dashboard {
+  background: linear-gradient(135deg,#0F766E,#14B8A6);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  color: white;
+}
+
+.glass-card {
+  backdrop-filter: blur(20px);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-top: 20px;
+}
